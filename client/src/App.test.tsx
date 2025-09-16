@@ -1,11 +1,11 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from "@/test/test-utils";
+import { render, screen } from '@/test/test-utils';
 import App from '@/App';
 
-describe("App", () => {
-  it("renderar en huvudrubrik", () => {
+describe('App', () => {
+  it('renderar en huvudrubrik', () => {
     render(<App />);
-    const h1 = screen.getByRole("heading", { level: 1 });
+    const h1 = screen.getByRole('heading', { level: 1 });
     expect(h1).toBeInTheDocument();
     expect(h1).not.toHaveTextContent(/^\s*$/);
   });
