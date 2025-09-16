@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import profileImg from '../assets/profileImg.jpg';
+import profileImg from '@/assets/profileImg.jpg';
 
 const Hero: React.FC = () => {
   return (
