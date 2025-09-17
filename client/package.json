@@ -11,7 +11,7 @@
     "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky",
+    "prepare": "husky install",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -51,11 +51,8 @@
     "vitest": "^3.2.4"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{ts,tsx,js,jsx,json,css,md}": [
       "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{js,jsx,css,md,json}": [
       "prettier --write"
     ]
   }
